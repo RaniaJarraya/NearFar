@@ -1,0 +1,27 @@
+<h1 mat-dialog-title>Hi {{data.name}}</h1>
+<div mat-dialog-content>
+    <div class="row">
+        <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-6">
+                            <label for="typeahead-format">from:</label>
+        
+                        <input id="typeahead-format" type="time" class="form-control" placeholder="Heure" [(ngModel)]="expert.heure_dep" style="width: 100px" />
+                    </div>
+                    <div class="col-sm-6">
+                            <label for="typeahead-format">To:</label>
+        
+                        <input id="typeahead-format" type="time" class="form-control" placeholder="Minute" [(ngModel)]="expert.heure_ter" style="width:100px ; margin-left:0px"  />
+                    </div>
+                </div>
+        </div>
+        
+        </div>
+        
+        <br>
+
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button (click)="save()" cdkFocusInitial>Save</button>
+</div>

@@ -1,0 +1,14 @@
+<h1 mat-dialog-title>Hi {{data.name}}</h1>
+<div mat-dialog-content>
+    <div class="row">
+      <h5 style="color: brown">ARE YOU SURE TO DELETE {{data.day}} ????</h5>
+        
+        <br>
+
+</div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button (click)="delete()" cdkFocusInitial>Delete</button>
+</div>
+

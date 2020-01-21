@@ -1,0 +1,41 @@
+prénom    <a (click)="open()"><span class="name" style="font-weight:bold ;margin-left:81%; color: steelblue">modifier</span> </a> <br>
+<div *ngIf="this.opened==1" >
+    <input type="text" placeholder="new name"[(ngModel)]="newName" style="height: 10px"  >
+    <button (click)="modifierName(newName)" class="btn btn-search" type="submit"> change</button>
+
+</div>
+<hr>
+nom    <a (click)="open3()"><span class="name" style="font-weight:bold ;margin-left: 83%; color: steelblue">modifier</span> </a> <br>
+<div *ngIf="this.opened4==1" >
+    <input type="text" placeholder="new lastname"[(ngModel)]="newLastName" style="height: 10px"  >
+    <button (click)="modifierLastName(newLastName)" class="btn btn-search" type="submit"> change</button>
+
+</div>
+<hr>
+email    <a (click)="open4()"><span class="name" style="font-weight:bold ;margin-left: 82%; color: steelblue">modifier</span> </a> <br>
+<div *ngIf="this.opened5==1" >
+    <input type="text" placeholder="new email"[(ngModel)]="newEmail" style="height: 10px"  >
+    <button (click)="modifierEmail(newEmail)" class="btn btn-search" type="submit"> change</button>
+
+</div>
+<hr>
+mot de passe    <a (click)="open1()"><span class="password" style="font-weight:bold ;margin-left: 79%; color: steelblue">modifier</span> </a> <br>
+<div *ngIf="this.opened2==1" >
+    <input type="password" placeholder="new Password"[(ngModel)]="newPass" style="height: 10px"  >
+    <button (click)="modifierPass(newPass)" class="btn btn-search" type="submit"> change</button>
+
+</div>
+<hr>
+domaine    <a (click)="open2()"><span class="name" style="font-weight:bold ;margin-left: 81%; color: steelblue">modifier</span> </a> <br>
+<div *ngIf="this.opened3==1" >
+        <select #domaine="ngModel" [(ngModel)]="newDomaine" name="domaine"  class="form-control">
+                <option>IOT</option>
+                <option>FINANCE</option>
+                <option>ECONOMIE</option>
+        </select>
+    <!--<input type="text" placeholder="new Domaine"[(ngModel)]="newDomaine" style="height: 10px"  >-->
+    <button (click)="modifierDomaine(newDomaine)" class="btn btn-search" type="submit"> change</button>
+
+</div>
+
+       <br>

@@ -1,0 +1,8 @@
+<input type="text" placeholder="email of expert"[(ngModel)]="Expert_email" style="height: 10px"  >
+<br>
+
+<ngb-rating [(rate)]="currentRate"style="size: 100%" ></ngb-rating>
+<br>
+<br>
+<pre>Rate: <b>{{currentRate}}</b></pre>
+<button class="btn btn-outline-success  my-2 my-sm-0" type="submit" (click)="send()">send</button> 

@@ -1,0 +1,56 @@
+<!--<div *ngFor="let case2 of times3 " >
+    <div *ngFor="let time of info " >
+    <div class="form-group form-check">
+        <div *ngIf="time[1] == case2[1] && time[0] == case2[0] && time[3] == case2[3]  " >
+                <button class="btn btn-danger" type="submit" style="width: 50px" disabled>{{case2}}</button> <br><br>
+        </div>
+        
+        <div *ngIf="time[3] != case2[3]  && time[1] != case2[1]" >
+                <button  class="btn btn-success" (click)="reserve(case2)" type="submit" style="width: 50px"  >{{case2}}</button> <br><br>
+        </div>
+    
+    </div>
+    </div>
+
+</div>-->
+
+<div class="row ">
+    <div class="col-xs-6">
+        <p>en train(CAN NOT RESERVE FOR A WHILE) :</p>
+        <div *ngFor="let p of pro1 " >
+            <div class="form-group form-check">
+        
+            <button class="btn" type="submit" style="width: 50px;background-color: yellow" disabled>{{p}}</button> 
+            
+            </div>
+
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <p>not reserved :</p>
+        <div *ngFor="let case of new4 " >
+                <div class="form-group form-check">
+                      <!--  <div *ngIf="case[0] != er[0] "  >-->
+                           
+                                <button class="btn btn-success" (click)="openDialog(case)" type="submit" style="width: 50px" >{{case}}</button> &nbsp;&nbsp;&nbsp;
+                                <div class="counter-wrapper">
+                                    <counter #counter></counter>
+                                </div>  
+                          <!--  </div>-->
+ <!-- <button class="btn btn-success" (click)="reserve(case)" type="submit" style="width: 50px" >{{case}}</button> &nbsp;&nbsp;&nbsp;-->
+                     
+               </div>
+        </div>
+
+</div>
+
+
+<!--
+<div>
+        <ol>
+          <li>
+            <button mat-raised-button (click)="openDialog()">Pick one</button>
+          </li>
+          <br />
+        </ol>
+</div>-->

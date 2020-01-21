@@ -1,0 +1,22 @@
+<div class="row">
+<div class="col-sm-6">
+        <div class="row">
+            <div class="col-sm-6">
+                    <label for="typeahead-format">De:</label>
+
+                <input id="typeahead-format" type="time" class="form-control" placeholder="Heure" [(ngModel)]="expert.heure_dep" style="width: 100px" />
+            </div>
+            <div class="col-sm-6">
+                    <label for="typeahead-format">Vers:</label>
+
+                <input id="typeahead-format" type="time" class="form-control" placeholder="Minute" [(ngModel)]="expert.heure_ter" style="width:100px ; margin-left:0px"  />
+            </div>
+        </div>
+</div>
+
+</div>
+
+<br>
+
+<button class="btn btn-outline-success  my-2 my-sm-0" type="submit" (click)="save()">Save</button>
+

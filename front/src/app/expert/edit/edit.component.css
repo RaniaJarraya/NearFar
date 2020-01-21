@@ -1,0 +1,21 @@
+
+@import '~ngx-toastr/toastr.css';
+
+.toast-bootstrap-compatibility-fix {
+    opacity:1;
+    width: 600px;
+}
+
+
+.toast-error { background-color: #BD362F !important; }
+ .toast-success { 
+    width: 600px;
+    background-color: #51A351 !important; } 
+  .toast-info {
+    background-color: #2F96B4 !important;
+  }
+  .toast-warning {
+      size: 100px;
+    background-color: #F89406 !important;
+  }
+

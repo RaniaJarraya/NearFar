@@ -1,0 +1,34 @@
+
+<h5>tu peut modifier :</h5>
+<br>
+name    <a (click)="open()"><span class="name" style="font-weight:bold ;margin-left: 80%; color: steelblue">modifier</span> </a> <br>
+<div *ngIf="this.opened==1" >
+    <input type="text" placeholder="new name"[(ngModel)]="newName" style="height: 10px"  >
+    <button (click)="modifierName(newName)" class="btn btn-search" type="submit"> change</button>
+
+</div>
+
+<hr>
+lastname    <a (click)="open3()"><span class="name" style="font-weight:bold ;margin-left: 79%; color: steelblue">modifier</span> </a> <br>
+<div *ngIf="this.opened4==1" >
+    <input type="text" placeholder="new lastname"[(ngModel)]="newLastName" style="height: 10px"  >
+    <button (click)="modifierLastName(newLastName)" class="btn btn-search" type="submit"> change</button>
+
+</div>
+<hr>
+email    <a (click)="open4()"><span class="name" style="font-weight:bold ;margin-left: 81%; color: steelblue">modifier</span> </a> <br>
+<div *ngIf="this.opened5==1" >
+    <input type="text" placeholder="new email"[(ngModel)]="newEmail" style="height: 10px"  >
+    <button (click)="modifierEmail(newEmail)" class="btn btn-search" type="submit"> change</button>
+
+</div>
+<hr>
+
+password    <a (click)="open1()"><span class="password" style="font-weight:bold ;margin-left: 79%; color: steelblue">modifier</span> </a> <br>
+<div *ngIf="this.opened2==1" >
+    <input type="password" placeholder="new Password"[(ngModel)]="newPass" style="height: 10px"  >
+    <button (click)="modifierPass(newPass)" class="btn btn-search" type="submit"> change</button>
+
+</div>
+
+

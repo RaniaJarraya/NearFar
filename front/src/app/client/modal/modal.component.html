@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>Hello {{data.Client_name}}</h1>
+<span style="color: red; font-weight:bold">You have 10 min to CONFIRM your reservation and pay </span><br/><br/>
+<div mat-dialog-content>
+  <p>Are you sure to reserve <span style="color: green;font-weight:bold">{{data.case}}</span>  ?</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button (click)="reserve(data.case)" cdkFocusInitial>Pay</button>
+</div>

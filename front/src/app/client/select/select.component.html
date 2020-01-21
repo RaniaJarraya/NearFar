@@ -1,0 +1,34 @@
+
+<h6 class="name" style="padding-left: 35%">Name : {{this.data[0]['Expert_name']}}</h6>
+ <h6 class="name" style="padding-left: 35%">Domaine : {{this.data['1']['domaine']}}</h6>
+ <h6 class="name" style="padding-left: 35%">Email : {{this.data['1']['email']}}</h6>
+ <h6 class="name" style="padding-left: 35%">duration : 30min/25dt</h6> 
+
+<div style="padding-left: 35%" >
+        <a *ngFor="let item of starList " >  
+                <i class="fa" [ngClass]="{'fa-star':!item,'fa-star-o':item}"></i>
+        </a>  /10
+</div>
+<div *ngFor="let expert of data ">
+        <div *ngIf="expert.dispo_Info.dispo_day >= this.date  " >
+                <div class="row">
+                    <div class="col-xs-9">
+                        
+                                <span class="name" style="color: red; font-weight:bold">Disponibility day : {{expert.dispo_Info.dispo_day}}</span><br/>
+                                <span class="name">Start Consultations : {{expert.dispo_Info.heure_dep}}</span><br/>
+                                <span class="name">Finish Consultations : {{expert.dispo_Info.heure_ter}}</span><br/> 
+                               
+                            <!--<a [routerLink]="['/selectedExpert',expert._id]"><span class="name" style="color: red; font-weight:bold">Date : {{expert.dispo_Info.dispo_day}}</span></a>
+                                <br/>-->
+                    </div>
+                    <div class="col-xs-3">
+                                <button [routerLink]="['/reserve', expert._id]" class="btn btn-info" tyh1e="submit">reserve</button>
+                    </div>
+                </div>
+        </div>
+<br/>
+<hr>
+<br/>
+</div>
+
+
