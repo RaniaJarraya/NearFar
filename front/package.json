@@ -27,7 +27,7 @@
     "angular-notification-icons": "^1.0.0",
     "angular-notifier": "^4.1.1",
     "bootstrap": "^4.2.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "moment": "^2.24.0",
     "ngx-toastr": "^10.0.2",
     "rxjs": "~6.4.0",
